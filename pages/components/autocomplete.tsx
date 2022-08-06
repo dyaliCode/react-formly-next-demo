@@ -49,7 +49,7 @@ const FieldAutoComplete: NextPage = () => {
 
   useEffect(() => {
     setFields(_fields);
-  }, []);
+  });
 
   const onChange = async (data: any) => {
     console.log("data", data);

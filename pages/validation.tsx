@@ -86,7 +86,7 @@ const Validation: NextPage = () => {
 
   useEffect(() => {
     setFields(_fields);
-  }, []);
+  });
 
   // * custom rules
   async function notEqual(values: any): Promise<boolean> {

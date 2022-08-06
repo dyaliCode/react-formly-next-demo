@@ -48,7 +48,7 @@ const Usage: NextPage = () => {
 
   useEffect(() => {
     setFields(_fields);
-  }, []);
+  });
 
   // *
   const onSubmit = (data: any) => {
