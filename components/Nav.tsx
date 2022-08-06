@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     <nav className="bg-indigo-600  border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-indigo-600 ">
-      <div className="mx-auto max-w-7xl sm:w-3/4 md:w-3/5 container flex flex-wrap justify-between items-center mx-auto">
+      <div className="mx-auto max-w-7xl sm:w-3/4 md:w-3/5 container flex flex-wrap justify-between items-center">
         <Link href="/">
           <a className="flex items-center">
             <div className="mr-3 h-6 sm:h-9 relative">
@@ -57,10 +57,8 @@ const Nav = () => {
               >
                 <a
                   className={`block py-2 pr-4 pl-3 text-white rounded md:bg-transparent ${
-                    router.pathname == "/"
-                      ? "md:text-indigo-600"
-                      : "dark:text-gray-400"
-                  } md:p-0 dark:text-white`}
+                    router.pathname == "/" ? "text-indigo-600" : "text-gray-400"
+                  } md:p-0 hover:text-indigo-600`}
                 >
                   Home
                 </a>
@@ -71,9 +69,9 @@ const Nav = () => {
                 <a
                   className={`block py-2 pr-4 pl-3 text-white rounded md:bg-transparent ${
                     router.pathname == "/usage"
-                      ? "md:text-indigo-600"
-                      : "dark:text-gray-400"
-                  } md:p-0 dark:text-white`}
+                      ? "text-indigo-600"
+                      : "text-gray-400"
+                  } md:p-0 hover:text-indigo-600`}
                 >
                   Usage
                 </a>
@@ -84,9 +82,9 @@ const Nav = () => {
                 <a
                   className={`block py-2 pr-4 pl-3 text-white rounded md:bg-transparent ${
                     router.pathname == "/alter"
-                      ? "md:text-indigo-600"
-                      : "dark:text-gray-400"
-                  } md:p-0 dark:text-white`}
+                      ? "text-indigo-600"
+                      : "text-gray-400"
+                  } md:p-0 hover:text-indigo-600`}
                 >
                   Alter
                 </a>
@@ -97,9 +95,9 @@ const Nav = () => {
                 <a
                   className={`block py-2 pr-4 pl-3 text-white rounded md:bg-transparent ${
                     router.pathname == "/validation"
-                      ? "md:text-indigo-600"
-                      : "dark:text-gray-400"
-                  } md:p-0 dark:text-white`}
+                      ? "text-indigo-600"
+                      : "text-gray-400"
+                  } md:p-0 hover:text-indigo-600`}
                 >
                   Validation
                 </a>
@@ -110,9 +108,9 @@ const Nav = () => {
                 <a
                   className={`block py-2 pr-4 pl-3 text-white rounded md:bg-transparent ${
                     router.pathname == "/preprocess"
-                      ? "md:text-indigo-600"
-                      : "dark:text-gray-400"
-                  } md:p-0 dark:text-white`}
+                      ? "text-indigo-600"
+                      : "text-gray-400"
+                  } md:p-0 hover:text-indigo-600`}
                 >
                   Preprocess
                 </a>
@@ -122,11 +120,11 @@ const Nav = () => {
               <button
                 id="mega-menu-full-dropdown-button"
                 data-collapse-toggle="mega-menu-full-dropdown"
-                className={`flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700
+                className={`flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium rounded md:w-auto hover:text-indigo-600 md:hover:bg-transparent md:border-0 md:p-0 dark:border-gray-700
                   ${
                     urlParams.includes("components") || !hidden
-                      ? "md:text-indigo-600"
-                      : "dark:text-gray-400"
+                      ? "text-indigo-600"
+                      : "text-gray-400"
                   }`}
                 onClick={() => setHidden(!hidden)}
               >
