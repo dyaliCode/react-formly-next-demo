@@ -40,7 +40,7 @@ const Alter: NextPage = () => {
 
   useEffect(() => {
     setFields(_fields);
-  });
+  }, [_fields]);
 
   return (
     <div className="w-1/2 mx-auto mt-10">

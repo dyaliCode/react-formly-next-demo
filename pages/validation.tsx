@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Formly, type IField } from "react-formly-light";
 
 const classField =
@@ -83,10 +83,6 @@ const Validation: NextPage = () => {
   // * Hooks.
   const [fields, setFields] = useState<IField[]>(_fields);
   const [data, setData] = useState<any>({});
-
-  useEffect(() => {
-    setFields(_fields);
-  });
 
   // * custom rules
   async function notEqual(values: any): Promise<boolean> {

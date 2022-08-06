@@ -84,9 +84,9 @@ const Preprocess: NextPage = () => {
   const [fields, setFields] = useState<IField[]>(_fields);
   const [loading, setLoading] = useState<boolean>(false);
 
-  useEffect(() => {
-    setFields(_fields);
-  });
+  // useEffect(() => {
+  //   setFields(_fields);
+  // });
 
   // *
   const onSubmit = (data: any) => {
