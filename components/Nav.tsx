@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     <nav className="bg-indigo-600  border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-indigo-600 ">
-      <div className="container flex flex-wrap justify-between items-center mx-auto">
+      <div className="mx-auto max-w-7xl sm:w-3/4 md:w-3/5 container flex flex-wrap justify-between items-center mx-auto">
         <Link href="/">
           <a className="flex items-center">
             <div className="mr-3 h-6 sm:h-9 relative">
